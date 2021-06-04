@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Image/Shan/Logo.png" type="image">
+    <title> Travel | Item-12 </title>
+
+    <style>
+        /* Navigation-Bar Start */
+        *{
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav {
+            position: fixed;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .nav ul li {
+            float: left;
+            background: #008695;
+        }
+        .nav ul li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        .nav ul li a:hover {
+            background-color: #008695;
+            letter-spacing: 3px;
+        }
+        /* Navigation-Bar End */
+
+        /* Font Buttons Start */
+        .font {
+            position: relative;
+            display: inline;
+            float: right;
+            padding-top: 5px;
+            font-size: 10px;
+        }
+        .font button {
+            background-color: #cfdbff;
+            border: none;
+            color: black;
+            padding: 13px 17px;
+            margin-top: 8px;
+            margin-right: 2px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size:15px;
+            float: left;
+            border-radius: 3px;
+        }
+        .font button:hover {
+            background-color: #92adfc;
+            transition: 0.4s ease-in-out;
+        }
+        /* Font Buttons End */
+
+        /* Product Area Start */
+        .item-12 {
+            display: inline;
+        }
+        .col-3 {
+            align-items: center;
+            padding: 200px 300px;
+        }
+        .col-3 img {
+            width: 300px;
+            height: 300px;
+        }
+        h2 {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        big {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .col-3-1 {
+            position: absolute;
+            display: inline;
+            padding: 0 100px;
+            margin-top: -500px;
+            margin-left: 550px;
+        }
+        .addBtn {
+            background-color: #cfdbff;
+            border-radius: 4px;
+            border: 1px solid black;
+            display: inline;
+            cursor: pointer;
+            color: black;
+            font-size: 19px;
+            padding: 6px 8px;
+            margin-top: 8px;
+            text-decoration: none;
+        }
+        .addBtn:hover {
+            background-color: #92adfc;
+        }
+        .productViewBtn {
+            position: absolute;
+            margin-top: 65px;
+            margin-left: -110px;
+            font-size: 18px;
+            color: #333333;
+            display: inline-block;
+            background-color: #9fcfcf;
+            border: 1px solid white;
+            padding: 19px 45px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .productViewBtn:hover {
+            background-color: #cfdbff;
+        }
+        .back {
+            position: absolute;
+            background-color: #68abf7;
+            margin-left: 1425px;
+            display: inline;
+            float: right;
+            cursor: pointer;
+            color: #000000;
+            font-size: 15px;
+            padding: 12px 24px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+        .back:hover {
+            background-color: #9fcfcf;
+        }
+        #quantity {
+            border: 1px solid black;
+            width: 50px;
+            box-sizing: border-box;
+        }
+        /* Product Area End */
+
+    </style>
+</head>
+
+<body>
+    <!---- Start navigation bar ---->
+    <section class="header">
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../Gallery.html">Gallery</a></li>
+                <li><a href="../store.html">Store</a></li>
+                <li><a href="../SiteMap.html">Site Map</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </section>
+    <!---- End navigation bar ---->
+
+    <!-------- Font Size --------->
+    <div class="font">
+        <button type="button" onclick="small()"> Small </button>
+        <button type="button" onclick="medium()"> Medium </button>
+        <button type="button" onclick="large()"> Large </button>
+        <button type="button" onclick="extraLarge()"> Extra Large </button>
+        <button type="button" onclick="reset()"> Reset </button>
+    </div>
+    <!-------- Font Size --------->
+
+    <!---- Item 12 Start ---->
+    <div class="product">
+        <div class="item-12">
+            <div class="col-3">
+                <img src="../Image/hand-crafts/4.jpg" alt="12">
+            </div>
+            <div class="col-3-1">
+                <h2> Traditional Mask </h2>
+                <big> Code: 86787487 </big>
+                <h2> $ 23.00 </h2>
+
+                <button class="addBtn" type="button" onclick="minus()"> - </button>
+                <button class="addBtn" type="button" onclick="plus()"> + </button>
+                <input type="text" id="quantity" value="1" min="1">
+
+                <button class="productViewBtn" type="button" onclick="addToCart()"> Buy Item </button>
+            </div>
+        </div>
+    </div>
+    <!---- Item 12 End ---->
+
+    <!---- Back Button Start ---->
+    <a href="../store.html">
+        <button class=back> Back </button>
+    </a>
+    <!---- Back Button End ---->
+
+    <script>
+        function plus(){
+            var qty = parseInt(document.getElementById("quantity").value) + 1;
+            document.getElementById("quantity").value = qty;
+        }
+        function minus(){
+            var qty = parseInt(document.getElementById("quantity").value);
+            if (qty > 0) {
+                qty = qty - 1;
+                document.getElementById("quantity").value = qty;
+            } else {
+                document.getElementById("quantity").value = 0;
+            }
+        }
+        function addToCart(){
+            var qty = parseInt(document.getElementById("quantity").value) * 23.00;
+            alert("Total Value is " + qty.toFixed(2) + "\nThank You! Come Again...");
+        }
+    </script>
+</body>
+</html>

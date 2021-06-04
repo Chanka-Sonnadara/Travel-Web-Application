@@ -1,0 +1,238 @@
+html, body {
+    height: 90%;
+    text-align: center;
+    overflow: hidden;
+    margin: 10%;
+    background-image: url("../Image/bg.jpg");
+}
+
+.home {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 11%;
+    right: 600px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.disSL {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 34.5%;
+    right: 1200px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.gallery {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 34.5%;
+    right: 900px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.store {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 34.5%;
+    right: 600px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.aboutUs {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 34.5%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.site {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 6px;
+    stroke: #1e272e;
+}
+
+/*inside store*/
+.heroPage1 {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    right: 958px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+.heroPage2 {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 60.5%;
+    right: 958px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.heroPage3 {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 71%;
+    right: 958px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.heroPage4 {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 81.5%;
+    right: 958px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+/*Inside About Us*/
+
+.shan {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 49.5%;
+    right: 268px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+.chanka {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    right: 268px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+.hasindu {
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 71%;
+    right: 268px;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.names {
+    color: #000;
+    font-family: "Bahnschrift";
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+}
+@font-face{
+    font-family: "Bahnschrift";
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 4px;
+    }
+}
+
+.home:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.disSL:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.gallery:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.store:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+
+.aboutUs:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+/*Inside Store*/
+.heroPage1:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.heroPage2:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.heroPage3:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.heroPage4:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+/*Inside About Us*/
+.shan:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.chanka:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+.hasindu:hover .site {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+
+/*Lines*/
+.downLine1{
+    position: absolute;
+    top: 38.4%;
+    right: 1250px;
+    stroke: #1e272e;
+    stroke-width:3px;
+}
+
+.downLine2{
+    position: absolute;
+    top: 38.4%;
+    right: 150px;
+    stroke: #1e272e;
+    stroke-width:3px;
+}
+.downMain{
+    position: absolute;
+    stroke: #1e272e;
+    top: 13.7%;
+    right: 170px;
+    stroke-width:3px;
+}
+
